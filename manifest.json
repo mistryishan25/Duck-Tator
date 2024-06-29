@@ -13,5 +13,18 @@
             ]
 
         }
-    ]
+    ],
+
+    "background" : {
+        "service_worker" : "background.js"
+    },
+
+    "action" : {
+        "default_icon" : "duck.jpg"
+    },
+
+    "permissions": [],
+    "side_panel" : {
+        "default_path": "panel.html"
+    }
 }
