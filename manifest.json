@@ -20,7 +20,7 @@
     },
 
     "action" : {
-        "default_icon" : "duck.jpg"
+        "default_icon" : "egg_icon.png"
     },
 
     "permissions": [],
