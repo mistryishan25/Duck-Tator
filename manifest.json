@@ -1,0 +1,30 @@
+{
+    "manifest_version" : 3,
+    "name" : "duck-tator",
+    "description" : "Meet Quacky, the Duck-tator, your productivity pal! This quirky Chrome extension features a dedicated duck who keeps you on track by flagging off-topic tabs and quacking you back to focus. Say goodbye to tab overload and hello to efficient workdays with Quacky leading the way!",
+    "version" : "0.1",
+    "content_scripts" : [
+        {
+            "matches" : [
+                "<all_urls>"
+            ],
+            "js" : [
+                "content.js"
+            ]
+
+        }
+    ],
+
+    "background" : {
+        "service_worker" : "background.js"
+    },
+
+    "action" : {
+        "default_icon" : "egg_icon.png"
+    },
+
+    "permissions": [],
+    "side_panel" : {
+        "default_path": "panel.html"
+    }
+}
