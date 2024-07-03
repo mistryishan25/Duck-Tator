@@ -20,14 +20,14 @@ Meet Quacky, the Duck-tator, your productivity pal! This quirky Chrome extension
   cd duck-tator
   git checkout toy```
   
-4. **Open Chrome Extensions**: 
+3. **Open Chrome Extensions**: 
    Go to `chrome://extensions/` in your Chrome browser.
    
-6. **Enable Developer Mode**: 
+4. **Enable Developer Mode**: 
    Toggle the switch for Developer Mode in the top right corner.
    
-8. **Load Unpacked Extension**: 
-   Click on "Load unpacked" and select the cloned repository folder.
+5. **Load Unpacked Extension**: 
+   Click on "Load unpacked" and select the cloned repository folder.(Try and pin the extension from the extension manager next to the search bar)
 
 ## Usage
 
