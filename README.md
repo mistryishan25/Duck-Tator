@@ -13,8 +13,8 @@ Meet Quacky, the Duck-tator, your productivity pal! This quirky Chrome extension
 
 1. **Clone the Repository**: 
    ```sh
-   git clone https://github.com/yourusername/distraction-eliminator.git
-   ```
+[   git clone https://github.com/yourusername/distraction-eliminator.git
+](https://github.com/mistryishan25/Duck-Tator.git)   ```
 2. **Checkout the toy branch**:
    ```
   
