@@ -7,11 +7,13 @@
 <body>
     <div class="container">
         <h1 class="title">Duck-Tator</h1>
-        <h2 class="tagline">Where do the good <s> boys</s> "tabs" go to hide away? Hide away? I'm a good good girl who needs a little fun today</h2>
-        <button class="try-me-button">Try me!</button>
+        <p> The toy version of the final product with one feature - obfuscate the text and images on distractive sites. Click the button below and woosh see the magic yourself!</p>
+        <h2 class="tagline">Where do the good <s>boys</s> "tabs" go to hide away? Hide away? I'm a good good gurl who needs a little fun today</h2>
+        <button id="try-me" class="try-me-button">Try me!</button>
     </div>
 </body>
 </html> -->
+
 
 <!DOCTYPE html>
 <html>
@@ -22,9 +24,34 @@
 <body>
     <div class="container">
         <h1 class="title">Duck-Tator</h1>
-        <p> The toy version of the final product with one feature - obfuscate the text and images on distractive sites. Click the button below and woosh see the magic yourself!</p>
-        <h2 class="tagline">Where do the good <s>boys</s> "tabs" go to hide away? Hide away? I'm a good good gurl who needs a little fun today</h2>
+        <div class="tabs">
+            <button class="tab-link" id="tab-a">Tab A</button>
+            <button class="tab-link" id="tab-b">Tab B</button>
+            <button class="tab-link" id="tab-c">Tab C</button>
+        </div>
+        <p>The toy version of the final product with one feature - obfuscate the text and images on distractive sites. Click the button below and woosh see the magic yourself!</p>
         <button id="try-me" class="try-me-button">Try me!</button>
+        <div class="card">
+            <div class="task-input">
+                <h3>Describe the task you are working on</h3>
+                <div class="input-group">
+                    <textarea id="task-desc" maxlength="200" placeholder="Enter your task here..."></textarea>
+                    <button class="submit-button" id="submit-task"><p>&#x270C</p> </button>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="reminder-card">
+                <h3>Reminder in about..?</h3>
+                <div class="input-group">
+                    <input type="text" id="reminder-minutes" placeholder="Enter minutes">
+                    <button class="submit-button" id="submit-reminder"><p>&#x270C</p></button>
+                </div>
+                <span id="error-message" class="error-message"></span>
+            </div>
+        </div>
     </div>
 </body>
 </html>
+
+ 

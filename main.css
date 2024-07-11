@@ -1,9 +1,8 @@
 html {
     width: 400px;  /* max: 800px */
-    height: 300px; /* max: 600px */
+    height: 500px; /* max: 600px - Increased height for the popup */
     margin: 0;
     padding: 0;
-    border: 4px solid yellow; /* Increased yellow border for the popup */
     box-sizing: border-box;
     border-radius: 15px; /* Added border radius for rounded edges */
     display: flex;
@@ -25,26 +24,41 @@ body {
 
 .container {
     background-color: white;
-    padding: 20px;
-    border: 4px solid orange; /* Increased orange border inside the popup */
+    padding: 10px;
     border-radius: 10px; /* Added border radius for rounded edges */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    width: calc(100% - 32px); /* Adjusted width to account for borders and padding */
-    height: calc(100% - 32px); /* Adjusted height to account for borders and padding */
+    width: calc(100% - 20px); /* Adjusted width to account for padding */
+    height: calc(100% - 20px); /* Adjusted height to account for padding */
     box-sizing: border-box; /* Include padding in the width and height */
+    margin: 0;
+    padding: 0;
 }
 
 .title {
     font-size: 2em;
     color: #4A90E2;
+    margin: 10px 0; /* Reduced space between the top and the title */
+}
+
+.tabs {
     margin-bottom: 10px;
 }
 
-.tagline {
-    font-size: 1.2em;
-    color: #333;
-    margin-bottom: 20px;
+.tab-link {
+    background-color: #4A90E2;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin: 0 5px;
+    transition: background-color 0.3s;
+}
+
+.tab-link:hover {
+    background-color: #357ABD;
 }
 
 .try-me-button {
@@ -56,8 +70,78 @@ body {
     cursor: pointer;
     font-size: 1em;
     transition: background-color 0.3s;
+    margin-bottom: 10px;
 }
 
 .try-me-button:hover {
     background-color: #357ABD;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px; /* Rounded edges */
+    padding: 10px;
+    margin-top: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+.task-input h3,
+.reminder-card h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+}
+
+textarea {
+    width: calc(100% - 50px); /* Adjusted width for button */
+    height: 60px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    resize: none;
+    font-family: Arial, sans-serif;
+}
+
+input[type="text"] {
+    width: calc(100% - 50px); /* Adjusted width for button */
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.submit-button {
+    background-color: #4A90E2;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 2em; /* Increase font size for the emoji */
+    margin-left: 10px;
+    transition: background-color 0.3s;
+    width: 40px; /* Square button */
+    height: 40px; /* Square button */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1; /* Ensure emoji is vertically centered */
+}
+
+.submit-button:hover {
+    background-color: #357ABD;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.9em;
+    margin-top: 5px;
+    display: block;
 }
