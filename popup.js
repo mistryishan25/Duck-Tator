@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-window.addEventListener("DOMContentLoaded", (event) => {
+window.addEventListener("DOMContentLoaded", function(){
     const submitTaskButton = document.getElementById('submit-task');
     if (submitTaskButton) {
         submitTaskButton.addEventListener('click', function() {
@@ -22,18 +22,25 @@ window.addEventListener("DOMContentLoaded", (event) => {
     }
 });
 
-
-window.addEventListener("DOMContentLoaded", (event) => {
+window.addEventListener("DOMContentLoaded", function() {
+    const alarm_id = 'alarm_001';
     const submitreminderButton = document.getElementById('submit-reminder');
     if (submitreminderButton) {
         submitreminderButton.addEventListener('click', function() {
             const reminderMinutes = document.getElementById('reminder-minutes').value;
             if (isNaN(reminderMinutes) || reminderMinutes === '') {
-                alert('Please enter a valid number of minutes.');
+                alert('Please enter a valid number of secs.');
+                console.log("invalid input")
             } else {
-
-                alert('Reminder set for ' + reminderMinutes + ' minutes.');
+                let dt = new Date();
+                dt.setSeconds(dt.getSeconds() + parseInt(reminderMinutes));
+                chrome.alarms.create(alarm_id, {when: dt.getTime()});
+                console.log("alaram created")
+                alert('Reminder set for ' + reminderMinutes + ' secs.');
             }
         });
     }
 });
+
+
+
